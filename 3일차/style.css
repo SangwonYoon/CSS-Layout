@@ -1,0 +1,75 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color:#DDE1D4;
+  padding:15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 90vw;
+  height: 90vh;
+  margin:0 auto;
+}
+
+#grid{
+    display: grid;
+    height: 90vh ;
+    grid-template:
+    "gray green green" 2fr
+    "red pink purple" 1fr
+    "red orange hotpink" 1fr / 2fr 1fr 1fr;
+}
+#grid > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+#gray{
+    color: rgb(247,67,14);
+    background-color: rgb(218,231,222);
+    grid-area:gray;
+    font-size: 50px;
+}
+
+#green{
+    color: white;
+    background-color: rgb(0,138,105);
+    grid-area: green;
+    font-size: 50px;
+}
+
+#red{
+    color: white;
+    background-color: rgb(244,70,7);
+    grid-area:red;
+    font-size: 50px;
+}
+
+#pink{
+    color: rgb(247,67,14);
+    background-color: rgb(247,171,197);
+    grid-area:pink;
+    font-size: 30px;
+}
+
+#purple{
+    color: white;
+    background-color: rgb(95,95,169);
+    grid-area:purple;
+    font-size: 30px;
+}
+
+#orange{
+    color: rgb(247,67,14);
+    background-color: rgb(255,193,40);
+    grid-area:orange;
+    font-size: 30px;
+}
+
+#hotpink{
+    color: white;
+    background-color: rgb(249,115,116);
+    grid-area:hotpink;
+    font-size: 30px;
+}
