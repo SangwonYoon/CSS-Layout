@@ -1,0 +1,86 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+.header{
+    width: 100%;
+    height: 150px;
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-auto-rows: 350px;
+}
+
+.grid > div:nth-child(1){
+    background-color: rgb(191, 189, 167);
+}
+.grid > div:nth-child(2){
+    background-image: url("img/1.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+div:nth-child(3){
+    background-color: rgb(254, 72, 20);
+}
+div:nth-child(4){
+    background-image: url("img/2.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+div:nth-child(5){
+    background-color: rgb(132, 126, 150);
+}
+div:nth-child(6){
+    background-color: rgb(208, 255, 113);
+}
+div:nth-child(7){
+    background-color: rgb(153, 52, 51);
+}
+div:nth-child(8){
+    background-color: rgb(58, 170, 250);
+}
+div:nth-child(9){
+    background-image: url("img/3.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+div:nth-child(10){
+    background-color: rgb(65, 144, 122);
+}
+div:nth-child(11){
+    background-image: url("img/4.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+div:nth-child(12){
+    background-color: rgb(227, 196, 229);
+}
+
+.grid > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.grid > div > p{
+    text-align: center;
+}
+.grid > div > p:first-child{
+    font-size: 20px;
+}
