@@ -65,14 +65,15 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.flexBox1 > p{
+.flexBox1 > span{
   font-weight: 700;
 }
-.flexBox1 > p:nth-child(1){
+.flexBox1 > span:nth-child(1){
   margin-top: 8px;
   font-size: 10px;
 }
-.flexBox1 > p:nth-child(7){
+.flexBox1 > span:nth-child(7){
+  align-self: flex-start;
   background-color: rgb(148, 26, 148);
 }
 
@@ -83,10 +84,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.flexBox2 > p{
+.flexBox2 > span{
   font-weight: 700;
 }
-.flexBox2 > p:nth-child(1){
+.flexBox2 > span:nth-child(1){
   margin-top: 8px;
   font-size: 10px;
 }
