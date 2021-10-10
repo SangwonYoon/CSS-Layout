@@ -1,0 +1,162 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+p {
+  line-height: 150%;
+}
+
+#gridBox {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 4fr 1fr;
+  grid-template-areas:
+    "aside section"
+    "aside footer";
+}
+aside,
+section > div,
+footer > div {
+  border: solid 2px;
+  padding: 10px;
+}
+
+aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+aside > p:nth-child(2) {
+  font-size: 30px;
+  font-weight: 600;
+}
+aside > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+}
+aside > div:nth-child(3) > div {
+  border: solid 2px;
+  border-top-style: none;
+  padding: 5px;
+  text-transform: uppercase;
+}
+aside > div:nth-child(3) > div:nth-child(1) {
+  border: solid 2px;
+  background-color: rgb(209, 209, 209);
+}
+aside > div:nth-child(5) > p:nth-child(1),
+aside > div:nth-child(6) > p:nth-child(1) {
+  font-weight: 700;
+}
+
+section {
+  grid-area: section;
+  display: grid;
+  grid-template-columns: 3fr 3fr 1fr 1fr 1fr;
+  grid-template-rows: 4fr 1fr 1fr 2fr;
+  grid-template-areas:
+    "section1 section2 section3 section3 section3"
+    "section1 section2 section4 section4 section5"
+    "section1 section2 section4 section4 section6"
+    "section1 section2 section7 section8 section8";
+}
+section > div:nth-child(1) {
+  grid-area: section1;
+  display: flex;
+  flex-direction: column;
+}
+section > div:nth-child(1) > p {
+  margin-bottom: 20px;
+}
+section > div:nth-child(1) > p:nth-child(1) {
+  margin-bottom: 50px;
+}
+section > div:nth-child(1) > p:nth-child(2) {
+  font-size: 40px;
+  font-weight: 600;
+}
+section > div:nth-child(2) {
+  grid-area: section2;
+  background-image: url(img/sec2.jpg);
+  background-size: cover;
+}
+section > div:nth-child(3) {
+  grid-area: section3;
+  background-image: url(img/sec3.jpg);
+  background-size: cover;
+}
+section > div:nth-child(4) {
+  grid-area: section4;
+  background-image: url(img/sec4.jpg);
+  background-size: cover;
+}
+section > div:nth-child(5) {
+  grid-area: section5;
+  background-image: url(img/sec5.jpg);
+  background-size: cover;
+}
+section > div:nth-child(6) {
+  grid-area: section6;
+  background-image: url(img/sec6.jpg);
+  background-size: cover;
+}
+section > div:nth-child(7) {
+  grid-area: section7;
+  background-image: url(img/sec7.jpg);
+  background-size: cover;
+}
+section > div:nth-child(8) {
+  grid-area: section8;
+  background-image: url(img/sec8.jpg);
+  background-size: cover;
+}
+
+footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 4fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "footer1 footer2 footer3 footer5"
+    "footer1 footer2 footer4 footer5";
+}
+footer > div:nth-child(1) {
+  grid-area: footer1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+footer > div:nth-child(1) > p:nth-child(2) {
+  font-size: 30px;
+  font-weight: 600;
+}
+footer > div:nth-child(2) {
+  grid-area: footer2;
+  background-image: url(img/foot1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+footer > div:nth-child(3) {
+  grid-area: footer3;
+  background-image: url(img/foot2.jpg);
+  background-size: cover;
+}
+footer > div:nth-child(4) {
+  grid-area: footer4;
+  background-image: url(img/foot3.jpg);
+  background-size: cover;
+}
+footer > div:nth-child(5) {
+  grid-area: footer5;
+  background-image: url(img/foot4.jpg);
+  background-size: cover;
+}
